@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background-image: url("exp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+.header {
+    overflow: hidden;
+    background: rgba(255,255,255,0.2);
+    text-align: center;   
+}
+
+.main-head {
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card{
+    margin: 0 auto;
+    display: flex;
+    font-weight: bold;
+     background: rgba(255,255,255,0.9);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;  
+}
+
+.search_field{
+	border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     background: rgba(255,255,255,1);
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.sorryText {
+    color: gray;
+
+}
+
+.back{
+  float: left;
+  cursor: pointer;
+  padding: .6rem;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: none; 
+}
+
+.btn{
+  padding-top:5px;
+  height:50px;
+}
+
+.container{
+  background:rgba(0,0,0,0.3);
+  color :white;
+  text-align:center;
+}
+
+/* Phones - iPhone SE, legacy Android phones  */
+@media only screen and (max-width: 600px) {
+    .header{
+        padding: 15px 5px;
+    }
+    .main-head{
+        font-size: 1.1em;
+    }
+    input {
+        width: 90%;
+        padding: 5px;
+        height: 30px;
+        -webkit-appearance: none;
+    }
+    .card{
+        width: 90%;
+        justify-content: flex-start;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+   img {
+    width: 50px;
+    height: 50px; 
+    margin-left: 10px;
+    }
+    .country{
+        font-size: 0.8em;
+        padding-left: 5px;
+        text-align: left;
+    }
+    
+} 
+
+/* Phones - larger screens */
+@media only screen and (min-width: 600px) {
+    .header{
+        padding: 15px 5px;
+    }
+    .main-head{
+        font-size: 1.5em;
+    }
+    input {
+        width: 80%;
+        height: 30px;
+       padding: 10px;
+        -webkit-appearance: none;
+    }
+    .card{
+        width: 80%;
+        justify-content: flex-start;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    img {
+        width: 60px;
+        height: 60px; 
+        margin-left: 10px;
+     }
+     .country{
+        padding-left: 8px;
+        text-align: left;
+    }
+    
+} 
+
+/* Android, iPads,random Windows  */
+@media only screen and (min-width: 768px) {
+    .header{
+        padding: 5px 2px;
+    }
+    .main-head{
+        font-size: 1.5em;
+    }
+    input {
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+        -webkit-appearance: none;
+    }
+    .card{
+        width: 80%;
+        justify-content: flex-start;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    img {
+        width: 70px;
+        height: 70px; 
+        margin-left: 20px;
+        }
+        .country{
+            padding-left: 10px;
+            text-align: left;
+        }
